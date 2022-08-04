@@ -1,0 +1,516 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #a2e2dc;
+}
+
+button:hover {
+    background-color: #507c78;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .imagen {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 15px;
+}
+
+header .logo {
+    margin: 0;
+    padding: 10px 30px 40px;
+    font-weight: bold;
+    color: #a2e2dc;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a {
+    padding: 5px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #a2e2dc;
+}
+
+#Hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("multimedia/clouds-gd2223565e_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#Hero h1 {
+    color: black;
+}
+
+#quienes-somos .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#materiales {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#materiales .container {
+    padding: 150px 12px;
+}
+
+#materiales h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#materiales p {
+    display: none;
+}
+
+#materiales .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("multimedia/IMG-4304.JPG");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("multimedia/IMG-4305.JPG");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("multimedia/IMG-4295.JPG");
+}
+
+footer {
+    background-color: rgb(245, 245, 245)
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .logo {
+        padding-right: 800px;
+        margin-top: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 10px;
+    }
+
+    #materiales .tipoDeMateriales {
+        display: flex;
+        justify-content: center;
+    }
+
+    #materiales p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #materiales h3 {
+        margin-top: 0;
+    }
+
+    #materiales .carta {
+        padding: 50px;
+    }
+
+    #videoMuestra .container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*Aplicando css a "productos"*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#misProductos {
+    display: block;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#misProductos .container {
+    padding: 150px 12px;
+}
+
+#misProductos h1 {
+    text-align: center;
+    font-size: 3.5em;
+    flex-direction: row;
+    font-family: Roboto, sans-serif;
+    padding: 20px;
+}
+
+#misProductos .acero {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.acero dt{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 15px;
+}
+
+#misProductos .plata {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.plata dt{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 15px;
+}
+
+#misProductos .oro {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.oro dt{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 15px;
+}
+
+.finalProductos{
+    margin-top: 90vh;
+}
+
+/*Aplicando css a "articulos"*/
+
+/*.misArticulos {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.misArticulos h1{
+    font-size: 3.5em;
+}*/
+
+/*Aplicando css a "mayorista"*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#somosMayorista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("multimedia/clouds-gd2223565e_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#somosMayorista h2{
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px;
+    margin-top: 40px;
+}
+
+#somosMayorista h2:hover{
+    color: #a2e2dc;
+    transform: scale(1.05);
+}
+
+/*#somosMayorista .imagenCentro{
+    background-image: url(multimedia/clouds-gd2223565e_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}*/
+
+#videoMuestra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 100px;
+}
+
+#comoFunciona{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+#comoFunciona h3{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px;
+
+}
+
+#galeria {
+    min-height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 15px;
+    padding-bottom: 100px;
+}
+
+.item {
+    border-radius: 5px;
+    border: 2px solid #000;
+    filter: grayscale(100%);
+    transition: all 0.7s;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    transition: all 0.7s;
+}
+
+.item1 {
+    background-image: url(fotosMayorista/IMG-2808.JPG);
+    background-position: center;
+    background-size: cover;
+}
+.item2 {
+    background-image: url(fotosMayorista/IMG-2859.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item3 {
+    background-image: url(fotosMayorista/IMG-2865.JPG);
+    background-position: center;
+    background-size: cover;
+}
+.item4 {
+    background-image: url(fotosMayorista/IMG-3158.JPG);
+    background-position: center;
+    background-size: cover;
+}
+.item5 {
+    background-image: url(fotosMayorista/IMG-3163.JPG);
+    background-position: center;
+    background-size: cover;
+}
+.item6 {
+    background-image: url(fotosMayorista/IMG_2782.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.item7 {
+    background-image: url(fotosMayorista/IMG_2792.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.item8 {
+    background-image: url(fotosMayorista/IMG_3171.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width:360px) {
+    #galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:768px) {
+    #galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .item2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item4{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .item5{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .item6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .item7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .item8{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+    
+}
+
+@media only screen and (min-width:768px){
+    #galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: "img1 img2 img3 img3"
+                            "img1 img4 img5 img6"
+                            "img7 img4 img8 img8";
+    }
+    .item1{
+        grid-area: img1;
+    }
+    .item2{
+        grid-area: img2;
+    }
+    .item3{
+        grid-area: img3;
+    }
+    .item4{
+        grid-area: img4;
+    }
+    .item5{
+        grid-area: img5;
+    }
+    .item6{
+        grid-area: img6;
+    }
+    .item7{
+        grid-area: img7;
+    }
+    .item8{
+        grid-area: img8;
+    }
+}
