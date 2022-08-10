@@ -30,7 +30,7 @@
         </div>
     </section>
 
-    <section>
+    <!--<section>
         <div class="container">
             <form action="#" method="post" enctype="text/plain">
                  <label for="nombre">nombre:</label>
@@ -44,7 +44,53 @@
                  <input type="submit">
             </form>
         </div>
-    </section><br><br><hr>
+    </section>-->
+<section class="susDatos container">
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="nombre1 col-md-4 mb-3">
+            <label for="validationTooltip01">Nombre</label>
+            <input type="text" class="form-control" id="validationTooltip01" value="Kevin" required>
+            <div class="valid-tooltip">
+              Ingrese su nombre!
+            </div>
+          </div>
+          <div class="apellido1 col-md-4 mb-3">
+            <label for="validationTooltip02">Apellido</label>
+            <input type="text" class="form-control" id="validationTooltip02" value="Nuñez" required>
+            <div class="valid-tooltip">
+              Ingrese su apellido!
+            </div>
+          </div>
+          <div class="usuario1 col-md-4 mb-3">
+            <label for="validationTooltipUsername">Usuario</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+              </div>
+              <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+              <div class="invalid-tooltip">
+                Por favor ingrese su usuario.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="ciudad1 col-md-6 mb-3">
+            <label for="validationTooltip03">Ciudad</label>
+            <input type="text" class="form-control" id="validationTooltip03" required>
+            <div class="invalid-tooltip">
+              Por favor ingrese su ciudad.
+            </div>
+          </div>
+          <div class="mensaje1 form-group">
+            <label for="exampleFormControlTextarea1">Deje su mensaje aquí</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+    </section>
 
     <footer>
 		<div class="container">

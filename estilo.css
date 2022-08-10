@@ -165,6 +165,22 @@ header a:hover {
             rgba(0, 0, 0, 0.5)), url("multimedia/IMG-4295.JPG");
 }
 
+.misDatos {
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+
+}
+
+.row{
+    background-color:#a2e2dc !important;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+
 footer {
     background-color: rgb(245, 245, 245)
 }
@@ -561,4 +577,47 @@ footer .container {
 #contact h1:hover{
     color: #a2e2dc;
     transform: scale(1.05);
+}
+
+.susDatos{
+    justify-content: center;
+    text-align:left;
+    padding: 30px;
+}
+
+.nombre1{
+    padding: 30px;
+    background-color: #a2e2dc;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.apellido1{
+    padding: 30px;
+    background-color: #a2e2dc;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.usuario1{
+    padding: 30px;
+    background-color: #a2e2dc;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.ciudad1{
+    padding: 30px;
+    background-color: #a2e2dc;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.mensaje1{
+    padding: 30px;
+    background-color: #a2e2dc;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.btn{
+    padding: 10px;
+    margin: 15px;
 }
