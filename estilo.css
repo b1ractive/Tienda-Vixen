@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@1&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
@@ -74,9 +77,9 @@ header nav {
     padding-bottom: 20px;
 }
 
-header a {
+header a{
     padding: 5px 3.5px;
-    text-decoration: none;
+    text-decoration: none !important;
     font-weight: bold;
     color: black;
 }
@@ -134,7 +137,7 @@ header a:hover {
     height: 400px;
 }
 
-.nright h4{
+.nright h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -271,6 +274,11 @@ footer .container {
         display: flex;
         justify-content: center;
     }
+
+    .lisArticulos{
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 /*Aplicando css a "productos"*/
@@ -281,25 +289,41 @@ footer .container {
     box-sizing: border-box;
 }
 
-#misProductos {
-    display: block;
-    flex-direction: column;
-    height: 100vh;
-}
-
-#misProductos .container {
-    padding: 150px 12px;
-}
-
-#misProductos h1 {
+#misProductos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 3.5em;
-    flex-direction: row;
-    font-family: Roboto, sans-serif;
-    padding: 20px;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("multimedia/clouds-gd2223565e_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-#misProductos .acero {
+#misProductos h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+}
+
+#misProductos h2:hover{
+    color: #a2e2dc;
+    transform: scale(1.05);
+}
+
+.lisProductos{
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.acero {
     background-position: center center;
     background-size: cover;
     padding: 50px 0;
@@ -309,11 +333,18 @@ footer .container {
 
 .acero dt{
     font-size: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'roboto', sans-serif;
     padding-bottom: 15px;
+    background-color: #a2e2dc;
+    padding-top: 15px;
 }
 
-#misProductos .plata {
+.acero dd{
+    padding: 20px;
+    text-align: left;
+}
+
+.plata {
     background-position: center center;
     background-size: cover;
     padding: 50px 0;
@@ -323,11 +354,18 @@ footer .container {
 
 .plata dt{
     font-size: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'roboto', sans-serif;
     padding-bottom: 15px;
+    background-color: #a2e2dc;
+    padding-top: 15px;
 }
 
-#misProductos .oro {
+.plata dd{
+    padding: 20px;
+    text-align: left;
+}
+
+.oro {
     background-position: center center;
     background-size: cover;
     padding: 50px 0;
@@ -337,25 +375,104 @@ footer .container {
 
 .oro dt{
     font-size: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'roboto', sans-serif;
     padding-bottom: 15px;
+    background-color: #a2e2dc;
+    padding-top: 15px;
 }
 
-.finalProductos{
-    margin-top: 90vh;
+.oro dd{
+    padding: 20px;
+    text-align: left;
 }
+
+/*.finalProductos{
+    margin-top: 90vh;
+}*/
 
 /*Aplicando css a "articulos"*/
 
-/*.misArticulos {
+/*#misArticulos {
     display: flex;
     flex-direction: column;
     height: 100vh;
+}*/
+
+#misArticulos h2{
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    padding: 50px;
+    margin-top: 40px;
 }
 
-.misArticulos h1{
-    font-size: 3.5em;
-}*/
+#misArticulos h2:hover{
+    color: #a2e2dc;
+    transform: scale(1.05);
+}
+#misArticulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("multimedia/clouds-gd2223565e_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.lisArticulos{
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.lisArticulos h3{
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+}
+
+.venta1{
+    padding: 80px;
+    background-color: rgb(245, 245, 245);
+    border: 2px solid black;
+}
+.venta2{
+    padding: 80px;
+    background-color: #a2e2dc;
+    border: 2px solid black;
+}
+.venta3{
+    padding: 80px;
+    background-color: rgb(245, 245, 245);
+    border: 2px solid black;
+}
+.venta4{
+    padding: 80px;
+    background-color: #a2e2dc;
+    border: 2px solid black;
+}
+.venta5{
+    padding: 80px;
+    background-color: rgb(245, 245, 245);
+    border: 2px solid black;
+}
+.venta6{
+    padding: 80px;
+    background-color: #a2e2dc;
+    border: 2px solid black;
+}
+.venta7{
+    padding: 80px;
+    background-color: rgb(245, 245, 245);
+    border: 2px solid black;
+}
 
 /*Aplicando css a "mayorista"*/
 
@@ -385,7 +502,7 @@ footer .container {
     text-align: center;
     align-items: center;
     font-size: 3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Playfair Display', serif;
     padding: 50px;
     margin-top: 40px;
 }
@@ -600,7 +717,7 @@ footer .container {
     justify-content: center;
     align-items: center;
     font-size: 3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 #contact h1:hover{
