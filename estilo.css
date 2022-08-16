@@ -6,7 +6,8 @@
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
 }
 
 h2 {
@@ -56,9 +57,9 @@ header .imagen {
     padding: 15px;
 }
 
-header .logo {
+header p {
     margin: 0;
-    padding: 10px 30px 40px;
+    padding: 10px 20px 40px;
     font-weight: bold;
     color: #a2e2dc;
     font-size: 1.6em;
@@ -82,6 +83,7 @@ header a{
     text-decoration: none !important;
     font-weight: bold;
     color: black;
+    font-size: 1em;
 }
 
 header a:hover {
@@ -230,20 +232,22 @@ footer .container {
     align-items: flex-end;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 720px){
     header {
         position: fixed;
         width: 100%;
     }
 
-    header .logo {
+    header p{
+        text-align: left;
+        justify-content: left;
         padding-right: 800px;
         margin-top: 20px;
     }
 
     header .container {
         flex-direction: row;
-        justify-content: space-between;
+        padding-right: 40px;
     }
 
     header nav {
@@ -270,15 +274,53 @@ footer .container {
         padding: 50px;
     }
 
-    #videoMuestra .container{
+    iframe {
         display: flex;
         justify-content: center;
     }
+
+    /*#videoMuestra .container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+}*/
 
     .lisArticulos{
         flex-direction: row;
         justify-content: center;
     }
+}
+
+@media only screen and (min-width:720px) and (max-width:1240px){
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header p{
+        text-align: left;
+        justify-content: left;
+        padding-right: 30px;
+        margin-top: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+        height: 150px;
+        padding-right: 90px;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        
+    }
+
+    iframe {
+        display: flex;
+        justify-content: center;
+    }
+    
 }
 
 /*Aplicando css a "productos"*/
@@ -308,7 +350,7 @@ footer .container {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Playfair Display', serif;
 }
 
@@ -402,7 +444,7 @@ footer .container {
     display: block;
     text-align: center;
     align-items: center;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Playfair Display', serif;
     padding: 50px;
     margin-top: 40px;
@@ -501,7 +543,7 @@ footer .container {
     display: block;
     text-align: center;
     align-items: center;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Playfair Display', serif;
     padding: 50px;
     margin-top: 40px;
@@ -519,13 +561,27 @@ footer .container {
     height: 100%;
 }*/
 
-#videoMuestra{
-    display: flex;
+/*#videoMuestra{
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
-    padding: 100px;
+    flex-direction: row;
+    padding-right: 50px;
+    padding-left: 50px;
+}*/
+
+#videoMuestra .container{
+        padding: 100px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+}
+
+#videoMuestra iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 100px 0 100px;
 }
 
 #comoFunciona{
@@ -609,11 +665,11 @@ footer .container {
     background-size: cover;
 }
 
-@media only screen and (min-width:360px) {
+/*@media only screen and (min-width:360px) {
     #galeria{
         grid-template-columns: 1fr 1fr;
     }
-}
+}*/
 
 @media only screen and (min-width:600px) and (max-width:768px) {
     #galeria{
@@ -716,7 +772,7 @@ footer .container {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Playfair Display', serif;
 }
 
@@ -762,6 +818,10 @@ footer .container {
     border-radius: 15px;
     border: 2px solid black;
 }
+
+textarea {
+    resize: none;
+  }
 
 .btn{
     padding: 10px;
