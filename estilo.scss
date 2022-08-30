@@ -285,12 +285,6 @@ p {
         justify-content: center;
     }
 
-    /*#videoMuestra .container{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-}*/
-
     .lisArticulos{
         flex-direction: row;
         justify-content: center;
@@ -330,12 +324,6 @@ p {
 }
 
 /*Aplicando css a "productos"*/
-
-/** {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
 
 #misProductos{
     display: flex;
@@ -435,18 +423,6 @@ h2:hover{
 }
 }
 
-/*.finalProductos{
-    margin-top: 90vh;
-}*/
-
-/*Aplicando css a "articulos"*/
-
-/*#misArticulos {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}*/
-
 #misArticulos{
     display: flex;
     align-items: center;
@@ -524,12 +500,6 @@ h3{
 
 /*Aplicando css a "mayorista"*/
 
-/** {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-
 #somosMayorista{
     display: flex;
     align-items: center;
@@ -559,22 +529,6 @@ h2:hover{
     transform: scale(1.0);
 }
 }
-
-/*#somosMayorista .imagenCentro{
-    background-image: url(multimedia/clouds-gd2223565e_1280.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-}*/
-
-/*#videoMuestra{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    padding-right: 50px;
-    padding-left: 50px;
-}*/
 
 #videoMuestra{
 
@@ -751,46 +705,6 @@ h3{
     .item8{
         grid-area: img8;
     }
-}
-
-$mapa1: (
-    sucursal1: #3a5795,
-    sucursal2: #dd2a7b,
-    sucursal3: #ce1312,
-    sucursal4: #51aff8
-); 
-
-@each $lugares, $colours in $mapa1 {
-    .btn--#{$lugares}{
-        background-color: #a2e2dc;
-        height: 200px;
-        width: 500px;
-        border: 10px solid #000;
-        text-align: center;
-        font-size: 35px;
-        color: $colours;
-        line-height: 200px;
-        text-transform: uppercase;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        
-    }
-}
-
-.info{
-    background-color: #507c78;
-    height: 400px;
-    width: 800px;
-    padding: 20px;
-    border: 3px solid #000;
-    text-align: center;
-    margin: 400px;
-}
-
-.info--error{
-    @extend .info;
-    border-radius: 3px solid #000;
-    color: white;
-    font-size: 20px;
 }
 
 /* Aplicando css a "contacto"*/
