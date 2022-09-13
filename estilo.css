@@ -123,10 +123,12 @@ header a:hover {
   background-size: cover;
   background-position: center;
   height: 400px;
+  position: static;
 }
 
 .nright {
   background-color: #a2e2dc;
+  position: static;
 }
 .nright h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -241,17 +243,12 @@ footer .container {
     display: flex;
     justify-content: center;
   }
-  /*#videoMuestra .container{
-          justify-content: center;
-          align-items: center;
-          display: flex;
-  }*/
   .lisArticulos {
     flex-direction: row;
     justify-content: center;
   }
 }
-@media only screen and (min-width: 720px) and (max-width: 1240px) {
+@media only screen and (min-width: 720px) and (max-width: 1485px) {
   header {
     position: fixed;
     width: 100%;
@@ -265,7 +262,7 @@ footer .container {
   header .container {
     flex-direction: row;
     height: 150px;
-    padding-right: 90px;
+    padding-right: 0px;
   }
   header nav {
     flex-direction: row;
@@ -277,11 +274,6 @@ footer .container {
   }
 }
 /*Aplicando css a "productos"*/
-/** {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
 #misProductos {
   display: flex;
   align-items: center;
@@ -366,15 +358,6 @@ footer .container {
   text-align: left;
 }
 
-/*.finalProductos{
-    margin-top: 90vh;
-}*/
-/*Aplicando css a "articulos"*/
-/*#misArticulos {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}*/
 #misArticulos {
   display: flex;
   align-items: center;
@@ -447,11 +430,6 @@ footer .container {
 }
 
 /*Aplicando css a "mayorista"*/
-/** {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
 #somosMayorista {
   display: flex;
   align-items: center;
@@ -470,7 +448,7 @@ footer .container {
   align-items: center;
   font-size: 2.5em;
   font-family: "Playfair Display", serif;
-  padding: 50px;
+  padding: 30px;
   margin-top: 40px;
 }
 #somosMayorista h2:hover {
@@ -478,20 +456,6 @@ footer .container {
   transform: scale(1);
 }
 
-/*#somosMayorista .imagenCentro{
-    background-image: url(multimedia/clouds-gd2223565e_1280.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-}*/
-/*#videoMuestra{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    padding-right: 50px;
-    padding-left: 50px;
-}*/
 #videoMuestra .container {
   padding: 100px;
   justify-content: center;
@@ -581,11 +545,6 @@ footer .container {
   background-size: cover;
 }
 
-/*@media only screen and (min-width:360px) {
-    #galeria{
-        grid-template-columns: 1fr 1fr;
-    }
-}*/
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   #galeria {
     grid-template-columns: repeat(3, 1fr);
@@ -654,74 +613,6 @@ footer .container {
     grid-area: img8;
   }
 }
-.btn--sucursal1 {
-  background-color: #a2e2dc;
-  height: 200px;
-  width: 500px;
-  border: 10px solid #000;
-  text-align: center;
-  font-size: 35px;
-  color: #3a5795;
-  line-height: 200px;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.btn--sucursal2 {
-  background-color: #a2e2dc;
-  height: 200px;
-  width: 500px;
-  border: 10px solid #000;
-  text-align: center;
-  font-size: 35px;
-  color: #dd2a7b;
-  line-height: 200px;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.btn--sucursal3 {
-  background-color: #a2e2dc;
-  height: 200px;
-  width: 500px;
-  border: 10px solid #000;
-  text-align: center;
-  font-size: 35px;
-  color: #ce1312;
-  line-height: 200px;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.btn--sucursal4 {
-  background-color: #a2e2dc;
-  height: 200px;
-  width: 500px;
-  border: 10px solid #000;
-  text-align: center;
-  font-size: 35px;
-  color: #51aff8;
-  line-height: 200px;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.info, .info--error {
-  background-color: #507c78;
-  height: 400px;
-  width: 800px;
-  padding: 20px;
-  border: 3px solid #000;
-  text-align: center;
-  margin: 400px;
-}
-
-.info--error {
-  border-radius: 3px solid #000;
-  color: white;
-  font-size: 20px;
-}
-
 /* Aplicando css a "contacto"*/
 * {
   margin: 0;

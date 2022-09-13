@@ -137,11 +137,13 @@ h2{
     background-size: cover;
     background-position: center;
     height: 400px;
+    position: static;
 }
 
 .nright{
 
     background-color: #a2e2dc;
+    position: static;
 
 h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -242,24 +244,25 @@ p {
     header {
         position: fixed;
         width: 100%;
-    }
+    
 
-    header p{
+    p{
         text-align: left;
         justify-content: left;
         padding-right: 800px;
         margin-top: 20px;
     }
 
-    header .container {
+    .container {
         flex-direction: row;
         padding-right: 40px;
     }
 
-    header nav {
+    nav {
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 10px;
+    }
     }
 
     #materiales .tipoDeMateriales {
@@ -291,29 +294,31 @@ p {
     }
 }
 
-@media only screen and (min-width:720px) and (max-width:1240px){
+@media only screen and (min-width:720px) and (max-width:1485px){
     header {
         position: fixed;
         width: 100%;
-    }
+    
 
-    header p{
+    p{
         text-align: left;
         justify-content: left;
         padding-right: 30px;
         margin-top: 20px;
     }
 
-    header .container {
+    .container {
         flex-direction: row;
         height: 150px;
-        padding-right: 90px;
+        padding-right: 0px;
+        
     }
 
-    header nav {
+    nav {
         flex-direction: row;
         padding-bottom: 0;
         
+    }
     }
 
     iframe {
@@ -520,7 +525,7 @@ h2{
     align-items: center;
     font-size: 2.5em;
     font-family: 'Playfair Display', serif;
-    padding: 50px;
+    padding: 30px;
     margin-top: 40px;
 }
 
@@ -572,12 +577,15 @@ h3{
     padding: 20px;
     grid-gap: 15px;
     padding-bottom: 100px;
+    
+    
 
 .item {
     border-radius: 5px;
     border: 2px solid #000;
     filter: grayscale(100%);
     transition: all 0.7s;
+    
 }
 
 .item:hover{
@@ -627,12 +635,6 @@ h3{
     background-size: cover;
 }
 }
-
-/*@media only screen and (min-width:360px) {
-    #galeria{
-        grid-template-columns: 1fr 1fr;
-    }
-}*/
 
 @media only screen and (min-width:600px) and (max-width:768px) {
     #galeria{
